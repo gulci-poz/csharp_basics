@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Grades
 {
-    class GradeBook
+    // domyślnie klasa ma dostęp internal - użycie w tym samym projekcie (assembly)
+
+    public class GradeBook
     {
         // ctor + tab * 2
         // upper case for public members

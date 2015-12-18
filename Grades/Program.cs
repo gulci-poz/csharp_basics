@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Speech.Synthesis;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,8 +12,8 @@ namespace Grades
         static void Main(string[] args)
         {
             // shift + f5 - przerwanie debugowania
-
             // f12 - dostęp do źródeł klasy (deklaracje) po najechaniu na nazwę
+            // ctrl + f4 - zamknięcie taba
 
             // Windows\Assembly - miejsce przechowywania Global Assembly Cache (biblioteki dll-i i nie tylko, np. mscorelib.dll)
             // .NET ładuje assemblies tylko, gdy używamy klas stamtąd, można deklarować więcej bez wpływu na wydajność
@@ -20,6 +21,12 @@ namespace Grades
             // mscorelib nie ma na liście, jest domyślnie dołączany do projektów; jest w Object Browser
 
             // klasa jest typem referencyjnym, w zmiennej przechowujemy adres w pamięci (wskaźnik)
+
+            // trzeba dodać assembly reference
+            /*
+            SpeechSynthesizer synth = new SpeechSynthesizer();
+            synth.Speak("Hello! This is the grade book program.");
+            */
 
             GradeBook book = new GradeBook();
             book.AddGrade(95);
