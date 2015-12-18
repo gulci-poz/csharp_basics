@@ -38,7 +38,7 @@ namespace Grades
             GradeStatistics stats = book.ComputeStatistics();
 
             // cw + tab * 2
-            Console.WriteLine("Average: " + stats.getAverage());
+            Console.WriteLine("Average: " + stats.getAverageGrade());
             Console.WriteLine("Highest grade: " + stats.getHighestGrade());
             Console.WriteLine("Lowest grade: " + stats.getLowestGrade());
         }

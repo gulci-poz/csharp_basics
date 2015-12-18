@@ -31,7 +31,7 @@ namespace Grades
             GradeStatistics stats = new GradeStatistics();
 
             // użycie funkcji wbudowanych w listę
-            stats.setAverage(grades.Average());
+            stats.setAverageGrade(grades.Average());
             stats.setHighestGrade(grades.Max());
             stats.setLowestGrade(grades.Min());
 
