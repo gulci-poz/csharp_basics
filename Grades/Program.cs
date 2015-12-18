@@ -12,6 +12,13 @@ namespace Grades
         {
             // shift + f5 - przerwanie debugowania
 
+            // f12 - dostęp do źródeł klasy (deklaracje) po najechaniu na nazwę
+
+            // Windows\Assembly - miejsce przechowywania Global Assembly Cache (biblioteki dll-i i nie tylko, np. mscorelib.dll)
+            // .NET ładuje assemblies tylko, gdy używamy klas stamtąd, można deklarować więcej bez wpływu na wydajność
+            // View -> Object Browser lub 2-klik na wybranej referencji
+            // mscorelib nie ma na liście, jest domyślnie dołączany do projektów; jest w Object Browser
+
             // klasa jest typem referencyjnym, w zmiennej przechowujemy adres w pamięci (wskaźnik)
 
             GradeBook book = new GradeBook();
