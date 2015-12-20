@@ -64,6 +64,8 @@ namespace Grades
         public static float MinimumGrade = 0;
         public static float MaximumGrade = 100;
 
+        public string Name;
+
         // domyślnie private
         List<float> grades;
     }

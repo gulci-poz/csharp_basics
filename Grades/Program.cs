@@ -14,6 +14,12 @@ namespace Grades
             // shift + f5 - przerwanie debugowania
             // f12 - dostęp do źródeł klasy (deklaracje) po najechaniu na nazwę
             // ctrl + f4 - zamknięcie taba
+            // alt + up/down - przesunięcie linii
+            // alt + zaznaczenie - pisanie w wielu liniach jednocześnie
+
+            // formatowanie kodu
+            // ctrl + k, ctrl + d (cały dokument)
+            // ctrl + k, ctrl + f (selekcja)
 
             // Windows\Assembly - miejsce przechowywania Global Assembly Cache (biblioteki dll-i i nie tylko, np. mscorelib.dll)
             // .NET ładuje assemblies tylko, gdy używamy klas stamtąd, można deklarować więcej bez wpływu na wydajność
@@ -27,6 +33,11 @@ namespace Grades
             SpeechSynthesizer synth = new SpeechSynthesizer();
             synth.Speak("Hello! This is the grade book program.");
             */
+
+            // komentarze
+            // ctrl + k, ctrl + c
+            // ctrl + k, ctrl + u
+            // Edit -> Advanced
 
             GradeBook book = new GradeBook();
             book.AddGrade(95);
