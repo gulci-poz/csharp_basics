@@ -13,7 +13,7 @@ namespace Grades.Tests.Types
         [TestMethod]
         public void IntVariablesHoldAValue()
         {
-            // value types są szybsz i potrzebują mniej pamięci, są immutable
+            // value types są szybsze i potrzebują mniej pamięci, są immutable
             int x1 = 100;
             int x2 = x1;
 
