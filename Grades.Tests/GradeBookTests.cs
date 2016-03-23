@@ -34,6 +34,8 @@ namespace Grades.Tests
         [TestMethod]
         public void ComputesLowestGrade()
         {
+            // f12 - do źródła, wiemy czy mamy do czynienia z typem referencyjnym
+            // można też na typach C#
             GradeBook book = new GradeBook();
             book.AddGrade(10);
             book.AddGrade(90);

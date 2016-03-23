@@ -10,6 +10,41 @@ namespace Grades.Tests.Types
     [TestClass]
     public class ReferenceTypeTests
     {
+        // struct tworzy value types
+        // reprezentuje pojedynczą wartość (np.dzień tygodnia)
+        // coś małego
+        // w innych przypadkach tworzymy klasy
+        /*
+        public Struct DateTime
+        {
+            // kod struktury
+        }
+        */
+
+        // enum tworzy value type
+        // enum służy do reprezentowania stałych (symboli)
+        // magical numbers zamieniane są na symbole
+        /*
+        public enum PayrollType
+        {
+            Contractor = 1,
+            Salaried,
+            Executive,
+            Hourly
+        }
+        */
+
+
+        [TestMethod]
+        public void StringComparisons()
+        {
+            string name1 = "Gulci";
+            string name2 = "gulci";
+
+            bool result = String.Equals(name1, name2, StringComparison.InvariantCultureIgnoreCase);
+            Assert.IsTrue(result);
+        }
+
         [TestMethod]
         public void IntVariablesHoldAValue()
         {

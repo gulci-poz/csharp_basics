@@ -2,12 +2,31 @@
 
 namespace hello_app
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             // args zawiera tylko podane argumenty, bez ścieżki z nazwą programu jako zerowy argument
-            //Console.WriteLine("Hello, " + args[0] + "!");
+            // C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe Program.cs
+            if(args.Length != 0)
+            {
+                Console.WriteLine("Hello args, " + args[0] + "!");
+            }
+            else
+            {
+                Console.WriteLine("Hello no args!");
+            }
+
+
+            if(DateTime.Now.DayOfWeek == DayOfWeek.Monday)
+            {
+                Console.WriteLine("Another case of the Mondays!");
+            }
+            else
+            {
+                Console.WriteLine("Today is: " + DateTime.Now.DayOfWeek);
+            }
+
 
             Console.Write("Enter your name: ");
             string name = Console.ReadLine();
